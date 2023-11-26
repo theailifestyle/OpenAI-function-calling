@@ -1,0 +1,41 @@
+{
+  "name": "search_google_shopping",
+  "description": "Performs a search query on Google Shopping",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "api_key": {
+        "type": "string",
+        "description": "Your API key for authentication"
+      },
+      "engine": {
+        "type": "string",
+        "description": "The search engine to use, in this case, 'google_shopping'"
+      },
+      "google_domain": {
+        "type": "string",
+        "description": "The Google domain to be queried"
+      },
+      "query": {
+        "type": "string",
+        "description": "The search query"
+      },
+      "device": {
+        "type": "string",
+        "description": "The device type for the search"
+      },
+      "num": {
+        "type": "number",
+        "description": "Number of results to return"
+      }
+    },
+    "required": [
+      "api_key",
+      "engine",
+      "google_domain",
+      "query",
+      "device",
+      "num"
+    ]
+  }
+}
