@@ -1,0 +1,46 @@
+{
+  "name": "search_google_local",
+  "description": "Performs a local search query on Google",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "api_key": {
+        "type": "string",
+        "description": "Your API key for authentication"
+      },
+      "engine": {
+        "type": "string",
+        "description": "The search engine to use, in this case, 'google_local'"
+      },
+      "google_domain": {
+        "type": "string",
+        "description": "The Google domain to be queried"
+      },
+      "query": {
+        "type": "string",
+        "description": "The search query, for example, 'thai food'"
+      },
+      "hl": {
+        "type": "string",
+        "description": "The language setting for the search results"
+      },
+      "gl": {
+        "type": "string",
+        "description": "The country setting for the search results"
+      },
+      "location": {
+        "type": "string",
+        "description": "The specific zip code based on user location"
+      }
+    },
+    "required": [
+      "api_key",
+      "engine",
+      "google_domain",
+      "query",
+      "hl",
+      "gl",
+      "location"
+    ]
+  }
+}
